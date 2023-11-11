@@ -1,0 +1,123 @@
+C:\Users\Maxim\source\repos\IILab1\bin\Debug\net6.0-windows\IILab1.exe
+C:\Users\Maxim\source\repos\IILab1\bin\Debug\net6.0-windows\IILab1.deps.json
+C:\Users\Maxim\source\repos\IILab1\bin\Debug\net6.0-windows\IILab1.runtimeconfig.json
+C:\Users\Maxim\source\repos\IILab1\bin\Debug\net6.0-windows\IILab1.dll
+C:\Users\Maxim\source\repos\IILab1\bin\Debug\net6.0-windows\IILab1.pdb
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1.csproj.AssemblyReference.cache
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1_MarkupCompile.cache
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1_MarkupCompile.lref
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1.g.resources
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1.AssemblyInfoInputs.cache
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1.AssemblyInfo.cs
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1.dll
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\refint\IILab1.dll
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1.pdb
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\IILab1.genruntimeconfig.cache
+C:\Users\Maxim\source\repos\IILab1\obj\Debug\net6.0-windows\ref\IILab1.dll
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\bin\Debug\net6.0-windows\IILab1.exe
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\bin\Debug\net6.0-windows\IILab1.deps.json
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\bin\Debug\net6.0-windows\IILab1.runtimeconfig.json
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\bin\Debug\net6.0-windows\IILab1.dll
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\bin\Debug\net6.0-windows\IILab1.pdb
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.cache
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.lref
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1.g.resources
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1.AssemblyInfo.cs
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1.dll
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\refint\IILab1.dll
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1.pdb
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\IILab1.genruntimeconfig.cache
+C:\Users\User\Desktop\СИИ\(СИИ) 1 лаба (вместе с Максом)\obj\Debug\net6.0-windows\ref\IILab1.dll
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.exe
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.deps.json
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.runtimeconfig.json
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.dll
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.pdb
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.cache
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.lref
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.g.resources
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.AssemblyInfo.cs
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.dll
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\refint\IILab1.dll
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.pdb
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.genruntimeconfig.cache
+C:\Users\User\Desktop\СИИ\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\ref\IILab1.dll
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.exe
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.deps.json
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.runtimeconfig.json
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.dll
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.pdb
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.csproj.AssemblyReference.cache
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.cache
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.lref
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.g.resources
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.dll
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\refint\IILab1.dll
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.pdb
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.genruntimeconfig.cache
+C:\Users\Maxim\Desktop\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\ref\IILab1.dll
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.exe
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.deps.json
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.runtimeconfig.json
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.dll
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.pdb
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.cache
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.lref
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.g.resources
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.AssemblyInfoInputs.cache
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.AssemblyInfo.cs
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.csproj.CoreCompileInputs.cache
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.dll
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\refint\IILab1.dll
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.pdb
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.genruntimeconfig.cache
+C:\Users\yashe\source\repos\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\ref\IILab1.dll
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.exe
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.deps.json
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.runtimeconfig.json
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.dll
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\bin\Debug\net6.0-windows\IILab1.pdb
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.csproj.AssemblyReference.cache
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\App.g.cs
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.cache
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1_MarkupCompile.lref
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\MainWindow.baml
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.g.resources
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.GeneratedMSBuildEditorConfig.editorconfig
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.AssemblyInfoInputs.cache
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.AssemblyInfo.cs
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.csproj.CoreCompileInputs.cache
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.dll
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\refint\IILab1.dll
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.pdb
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\IILab1.genruntimeconfig.cache
+E:\ПРОЕКТИКИ\ВУУЗ\7 сем\ИИ\Лабы\Сделанные\(СИИ) Лаб 1 (соло)\obj\Debug\net6.0-windows\ref\IILab1.dll
