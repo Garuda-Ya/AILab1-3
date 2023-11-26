@@ -46,7 +46,14 @@ namespace IILab1
         }
         private void NewLayout_Click(object sender, RoutedEventArgs e)
         {
-            GameField.CreateRandomField();
+            //GameField.CreateRandomField();
+            int n = 0;
+            while (n < 4)
+            {
+                GameField.CreateRandomField();
+                BreadthSearch();
+                n = solution.Count;
+            }
         }
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
@@ -162,7 +169,7 @@ namespace IILab1
             solution.Add(currentState);
             solution.Reverse();
 
-            MessageBox.Show("Решение Найдено");
+            //MessageBox.Show("Решение Найдено");
             GameField.fieldState.cells = solution[0].cells;
             GameField.Render();
             SetCounters();
@@ -352,21 +359,6 @@ namespace IILab1
             List<FieldState> listC = new List<FieldState>();
             FieldState fs = new FieldState();
 
-            Queue<FieldState> listO2 = new Queue<FieldState>();
-            List<FieldState> listC2 = new List<FieldState>();
-            FieldState finalFS = new FieldState();
-            finalFS.id = "";
-            for(int i = 0;i< Field.numberOfCells;i++)
-            {
-                finalFS.cells[i] = 1;
-                finalFS.id += 1;
-            }
-            finalFS.parent = "0";
-
-            listO2.Enqueue(finalFS);
-
-            currentState2 = finalFS;
-
             fs.id = "";
             for (int i = 0; i < Field.numberOfCells; i++)
             {
@@ -383,10 +375,19 @@ namespace IILab1
                 }
             }
             fs.parent = "0";
-
             listO.Enqueue(fs);
 
-            currentState = fs;
+            Queue<FieldState> listO2 = new Queue<FieldState>();
+            List<FieldState> listC2 = new List<FieldState>();
+            FieldState finalFS = new FieldState();
+            finalFS.id = "";
+            for(int i = 0;i< Field.numberOfCells;i++)
+            {
+                finalFS.cells[i] = 1;
+                finalFS.id += "1";
+            }
+            finalFS.parent = "0";
+            listO2.Enqueue(finalFS);
 
             while (listO.Count > 0)
             {
@@ -413,7 +414,6 @@ namespace IILab1
                     }
 
                 }
-
                     //Второй цикл с конца
 
                 //Взяли первый элемент с конца
@@ -425,7 +425,6 @@ namespace IILab1
                     currentState = listO.First(o => o.id == currentState2.id);
                     break;
                 }
-
                 //Добавляем в список неверных решений
                 listC2.Add(currentState2);
 
@@ -440,17 +439,15 @@ namespace IILab1
 
                 }
 
-
                 //Счётчики меняем
                 if (listO.Count + listO2.Count > maxO) maxO = listO.Count + listO2.Count;
                 if (listO.Count + listC.Count + listO2.Count + listC2.Count > maxC) maxC = listO.Count + listC.Count + listO2.Count + listC2.Count;
-
             }
             
             //Очищаем решение и записываем новое
             solution.Clear();
 
-            while (currentState2.id != "1111111111111111")
+            while (currentState2.id != finalFS.id)
             {
                 solution.Add(currentState2);
                 currentState2 = GetFatherFromList(listC2, currentState2);
@@ -490,6 +487,12 @@ namespace IILab1
                 GameField.Render();
             }
         }
+        /// <summary>
+        /// Ф-ция используется только для получения списка состояний
+        /// </summary>
+        /// <param name="listC"></param>
+        /// <param name="fs"></param>
+        /// <returns></returns>
         private FieldState GetFatherFromList(List<FieldState> listC, FieldState fs)
         {
             foreach (var item in listC)
@@ -561,7 +564,7 @@ namespace IILab1
                 //Добавляем все возможные варианты (Потомков)
                 for (int i = 0; i < currentState.cells.Length; i++)
                 {
-                    FieldState newFieldState = new FieldState(currentState.id, i,depth);
+                    FieldState newFieldState = new FieldState(currentState.id, i, currentState.depth+1);
                     newFieldState.value = heuristicFunc(newFieldState);
                     if (!listC.Any(o => o.id == newFieldState.id) && !listO.Any(o => o.id == newFieldState.id)) 
                     {
@@ -622,7 +625,8 @@ namespace IILab1
                 //Количество черных (расстояние Хемминга)
                 // size = 4 || numberOfCells = size*size;
                 case 0:
-                    value = fieldState.id.Count(f => (f == '0')) + (fieldState.depth * 1);
+                    value = fieldState.id.Count(f => (f == '0'));
+                    value = (int)Math.Ceiling((float)(value/5));
                     break;
                 case 1:
                     //Количество черных на краю 
@@ -636,10 +640,11 @@ namespace IILab1
                         {
                             if (fieldState.cells[i] == 0)
                             {
-                                value += 1 + fieldState.depth;
+                                value += 1;
                             }
                         }
                     }
+                    value = (int)Math.Ceiling((float)(value / 4));
                     break;
                 case 2:
                     //Количество черных по элементам шахматной доски (четная линия, чередуется с нечетной)
@@ -649,10 +654,11 @@ namespace IILab1
                         {
                             if (fieldState.cells[i] == 0)
                             {
-                                value += 1 + fieldState.depth;
+                                value += 1;
                             }
                         }
                     }
+                    value = (int)Math.Ceiling((float)(value / 4));
                     break;
                 case 3:
                     //Количество черных в центре
@@ -666,10 +672,11 @@ namespace IILab1
                         {
                             if (fieldState.cells[i] == 0)
                             {
-                                value += 1 + fieldState.depth;
+                                value += 1;
                             }
                         }
                     }
+                    value = (int)Math.Ceiling((float)(value / 5));
                     break;
                 case 9:
                     //Количество черных по диагоналям (лучше чем Хемминга, но не лучше центра и окраины)
@@ -679,13 +686,14 @@ namespace IILab1
                         {
                             if (fieldState.cells[i] == 0)
                             {
-                                value += 1 + fieldState.depth;
+                                value += 1;
                             }
                         }
                     }
+                    value = (int)Math.Ceiling((float)(value / 5));
                     break;
             }
-            return value;
+            return value + fieldState.depth;
         }
 
     }
