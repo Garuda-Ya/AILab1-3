@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,13 +47,115 @@ namespace IILab1
         }
         private void NewLayout_Click(object sender, RoutedEventArgs e)
         {
-            //GameField.CreateRandomField();
-            int n = 0;
-            while (n < 4)
+            //CreateSpecialField();
+            CreateFieldWithSolutionStep(6);
+            //BreadthTwoWaySearch();
+            //TestAllMethods();
+        }
+        private void CreateSpecialField()
+        {
+            Random random = new Random();
+            for (int i = 0; i < Field.numberOfCells; i++)
             {
-                GameField.CreateRandomField();
-                BreadthSearch();
-                n = solution.Count;
+                var indexClick = random.Next(0, 2);
+                if (indexClick == 0)
+                {
+                    GameField.fieldState.cells[i] = 1;
+                }
+                else GameField.fieldState.cells[i] = 0;
+            }
+        }
+        private void CreateFieldWithSolutionStep(int N)
+        {
+            int n = 0;
+            while (n != N)
+            {
+                GameField.CreateRandomField(N);
+                BreadthTwoWaySearch();
+                n = solution.Count-1;
+            }
+        }
+        private void TestAllMethods()
+        {
+            float breadthIterations = 0;
+            float doubleBreadthIterations = 0;
+            float depthITIterations = 0;
+            float heuristic1Iterations = 0;
+            float heuristic2Iterations = 0;
+            float heuristic3Iterations = 0;
+
+            float breadthNodes = 0;
+            float doubleBreadthNodes = 0;
+            float depthITNodes = 0;
+            float heuristic1Nodes = 0;
+            float heuristic2Nodes = 0;
+            float heuristic3Nodes = 0;
+
+            int numberOfTestsPerSteps = 50;
+            for (int n = 6;n<=6;n++)
+            {
+                breadthIterations = 0;
+                doubleBreadthIterations = 0;
+                depthITIterations = 0;
+                heuristic1Iterations = 0;
+                heuristic2Iterations = 0;
+                heuristic3Iterations = 0;
+
+                breadthNodes = 0;
+                doubleBreadthNodes = 0;
+                depthITNodes = 0;
+                heuristic1Nodes = 0;
+                heuristic2Nodes = 0;
+                heuristic3Nodes = 0;
+                for (int i = 0; i < numberOfTestsPerSteps; i++)
+                {
+                    //GameField.Clear();
+                    CreateFieldWithSolutionStep(n);
+                    doubleBreadthIterations += cycles;
+                    doubleBreadthNodes += maxC;
+
+                    BreadthSearch();
+                    breadthIterations += cycles;
+                    breadthNodes += maxC;
+
+                    IDDFS();
+                    depthITIterations += cycles;
+                    depthITNodes += maxC;
+
+                    choosenHeuristic = 0;
+                    solutionA();
+                    heuristic1Iterations += cycles;
+                    heuristic1Nodes += maxC;
+
+                    choosenHeuristic = 1;
+                    solutionA();
+                    heuristic2Iterations += cycles;
+                    heuristic2Nodes += maxC;
+
+                    choosenHeuristic = 2;
+                    solutionA();
+                    heuristic3Iterations += cycles;
+                    heuristic3Nodes += maxC;
+                    
+                }
+                WriteInFile("Поиск в ширину",n, breadthIterations / numberOfTestsPerSteps, breadthNodes / numberOfTestsPerSteps);
+                WriteInFile("Поиск двунаправленный",n, doubleBreadthIterations / numberOfTestsPerSteps, doubleBreadthNodes / numberOfTestsPerSteps);
+                WriteInFile("Поиск в глубину с ограничением",n, depthITIterations / numberOfTestsPerSteps, depthITNodes / numberOfTestsPerSteps);
+                WriteInFile("Поиск эвристика1",n, heuristic1Iterations / numberOfTestsPerSteps, heuristic1Nodes / numberOfTestsPerSteps);
+                WriteInFile("Поиск эвристика2",n, heuristic2Iterations / numberOfTestsPerSteps, heuristic2Nodes / numberOfTestsPerSteps);
+                WriteInFile("Поиск эвристика3",n, heuristic3Iterations / numberOfTestsPerSteps, heuristic3Nodes / numberOfTestsPerSteps);
+            }
+            MessageBox.Show("Тесты закончены.");
+        }
+        private void WriteInFile(string name, int n,float iter,float nodes)
+        {
+            string text = $"Для длины решения {n}:\nКол-во итераций = {iter}\nВсего макс состояний = {nodes}\n\r";
+            using (FileStream fstream = new FileStream(name+$" при n={n}"+ ".txt", FileMode.Append))
+            {
+                // преобразуем строку в байты
+                byte[] buffer = Encoding.Default.GetBytes(text);
+                // запись массива байтов в файл
+                fstream.Write(buffer, 0, buffer.Length);
             }
         }
         private void StartGame_Click(object sender, RoutedEventArgs e)
@@ -159,6 +262,11 @@ namespace IILab1
                 if (listO.Count > maxO) maxO = listO.Count;
                 if (listO.Count + listC.Count > maxC) maxC = listO.Count + listC.Count;
             }
+            if(listO.Count == 0)
+            {
+                MessageBox.Show("Решение не было найдено.");
+                return;
+            }
             //Очищаем решение и записываем новое
             solution.Clear();
             while (currentState.id != GameField.fieldState.id)
@@ -236,6 +344,11 @@ namespace IILab1
                 if (listO.Count+listC.Count > maxC) maxC = listO.Count + listC.Count;
 
             }
+            if (listO.Count == 0)
+            {
+                MessageBox.Show("Решение не было найдено.");
+                return;
+            }
             //Очищаем решение и записываем новое
             solution.Clear();
             while (currentState.id != GameField.fieldState.id)
@@ -246,7 +359,7 @@ namespace IILab1
             solution.Add(currentState);
             solution.Reverse();
 
-            MessageBox.Show("Решение Найдено");
+            //MessageBox.Show("Решение Найдено");
             GameField.fieldState.cells = solution[0].cells;
             GameField.Render();
             SetCounters();
@@ -331,7 +444,11 @@ namespace IILab1
                 cycles = 0;
                 limit++;
             }
-            
+            if (listO.Count == 0)
+            {
+                MessageBox.Show("Решение не было найдено.");
+                return;
+            }
             //Очищаем решение и записываем новое
             solution.Clear();
             while (currentState.id != GameField.fieldState.id)
@@ -342,7 +459,7 @@ namespace IILab1
             solution.Add(currentState);
             solution.Reverse();
 
-            MessageBox.Show("Решение Найдено");
+            //MessageBox.Show("Решение Найдено");
             GameField.fieldState.cells = solution[0].cells;
             GameField.Render();
 
@@ -443,7 +560,11 @@ namespace IILab1
                 if (listO.Count + listO2.Count > maxO) maxO = listO.Count + listO2.Count;
                 if (listO.Count + listC.Count + listO2.Count + listC2.Count > maxC) maxC = listO.Count + listC.Count + listO2.Count + listC2.Count;
             }
-            
+            if (listO.Count == 0)
+            {
+                MessageBox.Show("Решение не было найдено.");
+                return;
+            }
             //Очищаем решение и записываем новое
             solution.Clear();
 
@@ -461,7 +582,7 @@ namespace IILab1
             }
             solution.Reverse();
 
-            MessageBox.Show("Решение Найдено");
+            //MessageBox.Show("Решение Найдено");
             GameField.fieldState.cells = solution[0].cells;
             GameField.Render();
 
@@ -602,6 +723,11 @@ namespace IILab1
                 if (listO.Count > maxO) maxO = listO.Count;
                 if (listO.Count + listC.Count > maxC) maxC = listO.Count + listC.Count;
             }
+            if (listO.Count == 0)
+            {
+                MessageBox.Show("Решение не было найдено.");
+                return;
+            }
             //Очищаем решение и записываем новое
             solution.Clear();
             while (currentState.id != GameField.fieldState.id)
@@ -612,7 +738,7 @@ namespace IILab1
             solution.Add(currentState);
             solution.Reverse();
 
-            MessageBox.Show("Решение Найдено");
+            //MessageBox.Show("Решение Найдено");
             GameField.fieldState.cells = solution[0].cells;
             GameField.Render();
             SetCounters();
@@ -626,7 +752,7 @@ namespace IILab1
                 // size = 4 || numberOfCells = size*size;
                 case 0:
                     value = fieldState.id.Count(f => (f == '0'));
-                    value = (int)Math.Ceiling((float)(value/5));
+                    value = (int)Math.Ceiling((float)(value/ 3));
                     break;
                 case 1:
                     //Количество черных на краю 
@@ -644,7 +770,7 @@ namespace IILab1
                             }
                         }
                     }
-                    value = (int)Math.Ceiling((float)(value / 4));
+                    value = (int)Math.Ceiling((float)(value/2));
                     break;
                 case 2:
                     //Количество черных по элементам шахматной доски (четная линия, чередуется с нечетной)

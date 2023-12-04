@@ -45,6 +45,10 @@ namespace IILab1
                 instance = new Field();
             return instance;
         }
+        public void Clear()
+        {
+            fieldState = new FieldState();
+        }
         public void OnClick(int index)
         {
            //При нажатии вручную
@@ -82,6 +86,28 @@ namespace IILab1
                 var indexClick = random.Next(0, Field.numberOfCells);
                 this.OnClick(indexClick);
             }
+        }
+        public void CreateRandomField(int n)
+        {
+            fieldState.id = "";
+            Random random = new Random();
+            if (n<=6)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    var indexClick = random.Next(0, Field.numberOfCells);
+                    this.OnClick(indexClick);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < Field.numberOfCells; i++)
+                {
+                    var indexClick = random.Next(0, Field.numberOfCells);
+                    this.OnClick(indexClick);
+                }
+            }
+            
         }
         public void Render()
         {
